@@ -1,0 +1,17 @@
+*
+
+!.gitignore
+!Makefile
+!src/
+!inc/
+!inc/tivaware
+!lib/
+!misc/
+!**/*.c
+!**/*.s
+!**/*.h
+!**/*.md
+!**/*.ld
+!**/*.gdb
+!**/*.rules
+!**/*.uvproj
