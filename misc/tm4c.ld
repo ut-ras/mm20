@@ -11,6 +11,9 @@ SECTIONS {
         _text = .;
         *(.text*)
         *(.rodata*)
+    } > FLASH
+
+    .ARM.exidx : {
         _etext = .;
     } > FLASH
 
@@ -21,8 +24,14 @@ SECTIONS {
     } > RAM
 
     .bss : {
+        __bss_start__ = .;
         _bss = .;
         *(.bss*)
         _ebss = .;
+        __bss_end__ = .;
     } > RAM
+
+    end = .;
+
+    /DISCARD/ : { *(.ARM.exidx) }
 }

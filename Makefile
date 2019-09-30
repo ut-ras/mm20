@@ -1,28 +1,27 @@
 SRCS = $(wildcard src/*.c) $(wildcard lib/*.c)
 OBJS = $(addprefix obj/,$(notdir $(SRCS:.c=.o)))
 
-# CC = arm-none-eabi-gcc
 CC = clang --target=thumbv7em-unknown-none-eabi -Wno-keyword-macro -fshort-enums
-STDLIB = /usr/arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
-STDLIB += /usr/arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a
-STDLIB_HEADERS = /usr/arm-none-eabi/include
+LIBS = -L/usr/arm-none-eabi/lib/thumb/v7e-m+fp/hard
+HEADERS = /usr/arm-none-eabi/include
 
 CFLAGS = -ggdb -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -Wall -pedantic
-CFLAGS += -fdata-sections -ffunction-sections -MD -std=c11 -c
-CFLAGS += -I$(STDLIB_HEADERS) -mfloat-abi=hard -Os
+CFLAGS += -fdata-sections -ffunction-sections -MD -std=c99
+CFLAGS += -I$(HEADERS) -mfloat-abi=hard -O0
 
 OPENOCD = openocd -c 'source [find board/ek-tm4c123gxl.cfg]'
 
 all: out/out.elf
 
 obj/%.o: src/%.c
-	$(CC) -o $@ $^ -Iinc $(CFLAGS)
+	$(CC) -o $@ $^ -Iinc $(CFLAGS) -c
 
 obj/%.o: lib/%.c
-	$(CC) -o $@ $^ -Iinc $(CFLAGS)
+	$(CC) -o $@ $^ -Iinc $(CFLAGS) -c
 
 out/out.elf: $(OBJS)
-	arm-none-eabi-ld -o $@ $^ $(STDLIB) --gc-sections -T misc/tm4c.ld
+	arm-none-eabi-gcc -o $@ $^ $(LIBS) -lgcc -lc_nano -lnosys -lm \
+		-T misc/tm4c.ld -u _printf_float -u _scanf_float $(CFLAGS)
 
 flash: out/out.elf
 	$(OPENOCD) -c "program out/out.elf verify exit"
@@ -31,7 +30,7 @@ run: out/out.elf
 	$(OPENOCD) -c "program out/out.elf verify reset exit"
 
 uart: run
-	screen /dev/ttyACM0 115200
+	screen -L /dev/ttyACM0 115200
 
 debug: flash
 	gdb-multiarch out/out.elf -x misc/debug.gdb

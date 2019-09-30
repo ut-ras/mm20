@@ -1,15 +1,17 @@
 #include <stdbool.h>
 #include <stdint.h>
 
-// The launchpad peripherals are on port F on the following pins:
-// 0 - Left button
-// 1 - Red LED
-// 2 - Blue LED
-// 3 - Green LED
-// 4 - Right button
+// PF0 - Left button
+// PF1 - Red LED
+// PF2 - Blue LED
+// PF3 - Green LED
+// PF4 - Right button
+// PA0 - USB UART RX
+// PA1 - USB UART TX
 
-// Initializes the LED and button pins on the launchpad
-void launchpad_gpio_init(void);
+// Initializes the LED and button pins on the launchpad, as well as
+// USB UART through the debugger.
+void launchpad_init(void);
 
 #define RED_LED 2
 #define BLUE_LED 4

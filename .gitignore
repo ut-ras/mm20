@@ -6,6 +6,7 @@
 !inc/
 !inc/tivaware
 !lib/
+!sim/
 !misc/
 !**/*.c
 !**/*.s
