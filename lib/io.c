@@ -6,19 +6,30 @@ int _read(int file, char* ptr, int len) {
     int recieved = 0;
     char current = '\0';
     while (len--) {
-        if ((current = ROM_UARTCharGet(UART0_BASE)) == '\r') {
+        switch (current = ROM_UARTCharGet(UART0_BASE)) {
+        case '\r':
             putchar('\n');
             putchar('\r');
             if (recieved == 0) {
-                continue;
+                break;
             }
             *ptr++ = '\n';
-            ++recieved;
+            return recieved + 1;
+        case 127:
+            if (recieved > 0) {
+                putchar('\b');
+                putchar(' ');
+                putchar('\b');
+                --ptr;
+                --recieved;
+            }
             break;
+        default:
+            // printf("\n\rRecieved: %d\n\r", current);
+            putchar(current);
+            *ptr++ = current;
+            ++recieved;
         }
-        putchar(current);
-        *ptr++ = current;
-        ++recieved;
     }
     return recieved;
 }

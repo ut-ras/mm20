@@ -26,13 +26,12 @@ void wait_ms(uint32_t t) {
 void blink_success(void) {
     led_write(GREEN_LED, true);
     wait_ms(250);
-    led_write(GREEN_LED, true);
+    led_write(GREEN_LED, false);
 }
 
 int main(void) {
     ROM_SysCtlClockSet(SYSCTL_SYSDIV_4 | SYSCTL_USE_PLL | SYSCTL_XTAL_16MHZ |
                        SYSCTL_OSC_INT);
-    char c;
     int i;
     char s[80];
     float f;
@@ -41,26 +40,20 @@ int main(void) {
     while (1) {
         blink_success();
 
-        printf("Input a char");
-        scanf("%c", &c);
-        printf("Char entered: %c\n\r", c);
-
-        blink_success();
-
-        printf("Input an int");
+        printf("Input an int:\t");
         scanf("%d", &i);
-        printf("Int entered: %d\n\r", i);
+        printf("Int entered:\t%d\n\n\r", i);
 
         blink_success();
 
-        printf("Input a string");
+        printf("Input a string: ");
         scanf("%s", s);
-        printf("String entered: %s\n\r", s);
+        printf("String entered: %s\n\n\r", s);
 
         blink_success();
 
-        printf("Input a float");
+        printf("Input a float:\t");
         scanf("%f", &f);
-        printf("String entered: %f\n\r", f);
+        printf("String entered:\t%f\n\r", f);
     }
 }
