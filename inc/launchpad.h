@@ -10,12 +10,16 @@
 // PA1 - USB UART TX
 
 // Initializes the LED and button pins on the launchpad, as well as
-// USB UART through the debugger.
+// UART <-> USB through the debugger.
 void launchpad_init(void);
 
 #define RED_LED 2
 #define BLUE_LED 4
 #define GREEN_LED 8
+
+bool left_switch(void);
+
+bool right_switch(void);
 
 void led_toggle(uint8_t led);
 

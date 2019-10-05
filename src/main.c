@@ -23,21 +23,44 @@ void wait_ms(uint32_t t) {
     ROM_SysTickIntDisable();
 }
 
+void blink_success(void) {
+    led_write(GREEN_LED, true);
+    wait_ms(250);
+    led_write(GREEN_LED, true);
+}
+
 int main(void) {
     ROM_SysCtlClockSet(SYSCTL_SYSDIV_4 | SYSCTL_USE_PLL | SYSCTL_XTAL_16MHZ |
                        SYSCTL_OSC_INT);
-    volatile float f = 3.14159f;
+    char c;
+    int i;
+    char s[80];
+    float f;
     ROM_SysTickEnable();
     launchpad_init();
     while (1) {
-        led_toggle(RED_LED);
-        printf("cos/pow: %f/%f\n\r", cosf(f), powf(f, 3));
-        wait_ms(200);
-        led_toggle(GREEN_LED);
-        printf("hello world\n\r");
-        wait_ms(200);
-        led_toggle(BLUE_LED);
-        printf("%f\n\r", f += 0.01f);
-        wait_ms(200);
+        blink_success();
+
+        printf("Input a char");
+        scanf("%c", &c);
+        printf("Char entered: %c\n\r", c);
+
+        blink_success();
+
+        printf("Input an int");
+        scanf("%d", &i);
+        printf("Int entered: %d\n\r", i);
+
+        blink_success();
+
+        printf("Input a string");
+        scanf("%s", s);
+        printf("String entered: %s\n\r", s);
+
+        blink_success();
+
+        printf("Input a float");
+        scanf("%f", &f);
+        printf("String entered: %f\n\r", f);
     }
 }

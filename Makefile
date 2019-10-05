@@ -21,7 +21,7 @@ obj/%.o: lib/%.c
 
 out/out.elf: $(OBJS)
 	arm-none-eabi-gcc -o $@ $^ $(LIBS) -lgcc -lc_nano -lnosys -lm \
-		-T misc/tm4c.ld -u _printf_float -u _scanf_float $(CFLAGS)
+		-T misc/tm4c.ld $(CFLAGS) -u _printf_float -u _scanf_float
 
 flash: out/out.elf
 	$(OPENOCD) -c "program out/out.elf verify exit"

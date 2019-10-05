@@ -277,11 +277,6 @@ void default_reset_handler(void) {
     *CPACR |= 0xF << 20;
 
     main();
-    while (1)
-        ;
-}
-
-void default_handler(void) {
     while (1) {}
 }
 
