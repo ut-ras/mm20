@@ -25,7 +25,6 @@ int _read(int file, char* ptr, int len) {
             }
             break;
         default:
-            // printf("\n\rRecieved: %d\n\r", current);
             putchar(current);
             *ptr++ = current;
             ++recieved;
