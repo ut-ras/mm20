@@ -15,4 +15,4 @@
 !**/*.ld
 !**/*.gdb
 !**/*.rules
-!**/*.uvproj
+*.uvprojx
