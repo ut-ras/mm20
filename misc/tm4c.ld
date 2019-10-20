@@ -11,11 +11,10 @@ SECTIONS {
         _text = .;
         *(.text*)
         *(.rodata*)
-    } > FLASH
-
-    .ARM.exidx : {
         _etext = .;
     } > FLASH
+
+    .ARM.exidx : {} > FLASH
 
     .data : AT(_etext) {
         _data = .;
@@ -33,5 +32,5 @@ SECTIONS {
 
     end = .;
 
-    /DISCARD/ : { *(.ARM.exidx) }
+    /DISCARD/ : { *(.ARM.exidx*) }
 }

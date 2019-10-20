@@ -3,11 +3,12 @@ OBJS = $(addprefix obj/,$(notdir $(SRCS:.c=.o)))
 
 CC = clang --target=thumbv7em-unknown-none-eabi -Wno-keyword-macro -fshort-enums
 LIBS = -L/usr/arm-none-eabi/lib/thumb/v7e-m+fp/hard
-HEADERS = /usr/arm-none-eabi/include
+LIBS += -L/usr/lib/gcc/arm-none-eabi/9.2.0
+HEADERS = -I/usr/arm-none-eabi/include
 
 CFLAGS = -ggdb -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -Wall -pedantic
 CFLAGS += -fdata-sections -ffunction-sections -MD -std=c99
-CFLAGS += -I$(HEADERS) -mfloat-abi=hard -O0
+CFLAGS += $(HEADERS) -mfloat-abi=hard -O0
 
 OPENOCD = openocd -c 'source [find board/ek-tm4c123gxl.cfg]'
 
@@ -20,8 +21,8 @@ obj/%.o: lib/%.c
 	$(CC) -o $@ $^ -Iinc $(CFLAGS) -c
 
 out/out.elf: $(OBJS)
-	arm-none-eabi-gcc -o $@ $^ $(LIBS) -lgcc -lc_nano -lnosys -lm \
-		-T misc/tm4c.ld $(CFLAGS) -u _printf_float -u _scanf_float
+	ld.lld -o $@ $^ $(LIBS) -lgcc -lc_nano -lnosys -lm \
+		-T misc/tm4c.ld -u _printf_float -u _scanf_float
 
 flash: out/out.elf
 	$(OPENOCD) -c "program out/out.elf verify exit"

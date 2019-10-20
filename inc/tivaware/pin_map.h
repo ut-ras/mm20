@@ -1,6 +1,6 @@
 #include <stdbool.h>
 #include <stdint.h>
-#define PART_TM4C1230H6PM
+#define PART_TM4C123GH6PM
 //*****************************************************************************
 //
 // pin_map.h - Mapping of peripherals to pins for all parts.

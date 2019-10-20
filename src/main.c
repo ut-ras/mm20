@@ -1,7 +1,10 @@
 #include "launchpad.h"
+#include "tivaware/gpio.h"
+#include "tivaware/hw_ints.h"
 #include "tivaware/hw_memmap.h"
 #include "tivaware/rom.h"
 #include "tivaware/sysctl.h"
+#include "tivaware/timer.h"
 #include <math.h>
 #include <stdint.h>
 #include <stdio.h>
@@ -29,31 +32,31 @@ void blink_success(void) {
     led_write(GREEN_LED, false);
 }
 
+void timer0_init() {
+    ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_TIMER0);
+    ROM_TimerConfigure(TIMER0_BASE, TIMER_CFG_PERIODIC);
+    ROM_TimerLoadSet(TIMER0_BASE, TIMER_A, 800000); // 100Hz
+    ROM_IntEnable(INT_TIMER0A);
+    ROM_TimerIntEnable(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
+    ROM_TimerEnable(TIMER0_BASE, TIMER_BOTH);
+}
+
+void timer0a_handler(void) {
+    ROM_TimerIntClear(TIMER0_BASE, TIMER_A);
+    ROM_GPIOPinWrite(GPIO_PORTA_BASE, GPIO_PIN_7,
+                     ~ROM_GPIOPinRead(GPIO_PORTA_BASE, GPIO_PIN_7));
+}
+
 int main(void) {
-    ROM_SysCtlClockSet(SYSCTL_SYSDIV_4 | SYSCTL_USE_PLL | SYSCTL_XTAL_16MHZ |
-                       SYSCTL_OSC_INT);
-    int i;
-    char s[80];
-    float f;
+    ROM_SysCtlClockSet(SYSCTL_SYSDIV_2_5 | SYSCTL_USE_PLL | SYSCTL_XTAL_16MHZ |
+                       SYSCTL_OSC_MAIN);
     ROM_SysTickEnable();
     launchpad_init();
+    ROM_GPIOPinTypeGPIOOutput(GPIO_PORTA_BASE, GPIO_PIN_7);
+    timer0_init();
     while (1) {
         blink_success();
-
-        printf("Input an int:\t");
-        scanf("%d", &i);
-        printf("Int entered:\t%d\n\n\r", i);
-
-        blink_success();
-
-        printf("Input a string: ");
-        scanf("%s", s);
-        printf("String entered: %s\n\n\r", s);
-
-        blink_success();
-
-        printf("Input a float:\t");
-        scanf("%f", &f);
-        printf("String entered:\t%f\n\r", f);
+        printf("nice\n\r");
+        wait_ms(1000);
     }
 }
