@@ -40,7 +40,6 @@ void timer0_init() {
   ROM_TimerIntEnable(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
   ROM_TimerEnable(TIMER0_BASE, TIMER_BOTH);
 }
-
 void timer0a_handler(void) {
   ROM_TimerIntClear(TIMER0_BASE, TIMER_A);
   ROM_GPIOPinWrite(GPIO_PORTA_BASE, GPIO_PIN_7,
@@ -52,22 +51,24 @@ void adc0_init() {
   ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOE); // enable for AIN0 on E3
   ROM_GPIOPinTypeADC(GPIO_PORTE_BASE, GPIO_PIN_3);
   ROM_ADCSequenceConfigure(ADC0_BASE, 3, ADC_TRIGGER_PROCESSOR, 0);
-  ADCSequenceStepConfigure(ADC0_BASE, 3, 0,
-                           ADC_CTL_CH0 | ADC_CTL_IE | ADC_CTL_END);
+  ROM_ADCSequenceStepConfigure(ADC0_BASE, 3, 0,
+                               ADC_CTL_CH0 | ADC_CTL_IE | ADC_CTL_END);
 
-  ADCSequenceEnable(ADC0_BASE, 3);
+  ROM_ADCSequenceEnable(ADC0_BASE, 3);
 
-  ADCIntClear(ADC0_BASE, 3);
+  ROM_ADCIntClear(ADC0_BASE, 3);
 }
 
 static uint32_t pui32ADC0Value[1];
 void adc0_read() {
-  ADCProcessorTrigger(ADC0_BASE, 3);           // trigger ADC conversion
-  while (!ADCIntStatus(ADC0_BASE, 3, false)) { // wait for conversion to finish
+  ROM_ADCProcessorTrigger(ADC0_BASE, 3); // trigger ADC conversion
+  while (
+      !ROM_ADCIntStatus(ADC0_BASE, 3, false)) { // wait for conversion to finish
   }
-  ADCIntClear(ADC0_BASE, 3);
-  ADCSequenceDataGet(ADC0_BASE, 3, pui32ADC0Value); // read AIN0 E3
-  printf("AIN0 = %4d\r", pui32ADC0Value[0]);
+  ROM_ADCIntClear(ADC0_BASE, 3);
+  ROM_ADCSequenceDataGet(ADC0_BASE, 3, pui32ADC0Value); // read AIN0 E3
+  printf("AIN0 = %4d\n\r", pui32ADC0Value[0]);
+  // printf("AIN0\n\r");
 }
 
 int main(void) {
