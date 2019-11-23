@@ -56,7 +56,7 @@ int main(void) {
     timer0_init();
     while (1) {
         blink_success();
-        printf("nice\n\r");
+        printf("left: %d\t\tright:%d\n\r", left_switch(), right_switch());
         wait_ms(1000);
     }
 }

@@ -44,7 +44,7 @@ uart: run
 	screen -L /dev/ttyACM0 115200
 
 debug: flash
-	gdb-multiarch out/out.elf -x misc/debug.gdb
+	arm-none-eabi-gdb out/out.elf -x misc/debug.gdb
 
 debug_gui: flash
 	gdbgui -g arm-none-eabi-gdb --gdb-args="-command=misc/debug_gui.gdb" \
