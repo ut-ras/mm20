@@ -8,6 +8,7 @@
 !lib/
 !sim/
 !misc/
+!pcb/
 !**/*.c
 !**/*.s
 !**/*.h
@@ -15,4 +16,12 @@
 !**/*.ld
 !**/*.gdb
 !**/*.rules
+
 *.uvprojx
+
+!**/*.kicad
+!**/*.pro
+!**/*.sch
+!**/*.brd
+!**/*.lib
+!**/*.mod
