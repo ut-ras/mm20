@@ -6,3 +6,8 @@ TM4C Code Composer Studio Environment Setup
     * Choose either the single-file installer or on-demand installer.
     * Leave all settings as default except the following:
     * ![Settings Image](https://i.imgur.com/PTGEXd5.png)
+2. Open Resource Explorer
+    * ![Resource Explorer Image](https://i.imgur.com/TyU6Rpb.png)
+3. Navigate to Software -> Click on TI-RTOS for TivaC and click install
+      * ![Resource Explorer Image 2](https://i.imgur.com/7c2887s.png)
+      * ![Resource Explorer Install Image](https://i.imgur.com/8Pujq0D.png)
