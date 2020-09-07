@@ -22,6 +22,12 @@ TM4C Code Composer Studio Environment Setup
       * ![Project Explorer](https://i.imgur.com/gMqyJJb.png)
 
 6. The example code can be found in gpiointerrupt_EK_TM4C.../gpiointerrupt.c
-7. To flash the code onto your TM4C board, plug the board in and set the power switch so that the green LED turns on. Make sure to plug the USB into the same port as the one in       the picture. Press the debug button and accept any dialog boxes. 
+7. Plug the board into your computer and set the board power switch so that the green LED turns on. Make sure to plug the USB into the same port as the one in       the picture. Press the debug button and accept any dialog boxes. 
       * ![USB Port](https://i.imgur.com/XmdeF07.png)
       * ![Debug Button](https://i.imgur.com/fHwHgSs.png)
+8. In the window that pops up, change your settings to the following and click on save:
+      * Connection: Stellaris In-Circuit Debug Interface
+      * Board or Device: In the search bar, look up GH6PM and activate the checkbox for Tiva TM4C123GH6PM
+      * Click on the save button under Save Configuration
+      * ![CCXML](https://i.imgur.com/Tz6Cn8R.png)
+9. Click on the debug button again. CCS will now flash your TM4C board with the new code. To test the code, press the bottom 2 buttons and make sure the red LED turns on.
