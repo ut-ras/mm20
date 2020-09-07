@@ -28,13 +28,15 @@ __TM4C Code Composer Studio Environment Setup__
       * ![Target Config](https://i.imgur.com/rmmsKlo.png)
       * ![CCXML](https://i.imgur.com/Tz6Cn8R.png)
 
-6. Download [XDCtools 3.32](http://software-dl.ti.com/dsps/dsps_public_sw/sdo_sb/targetcontent/rtsc/3_32_01_22/index_FDS.html). Delete everything inside C:\ti\ccs930\xdctools_3_60_02_34_core and replace it with the contents of your downloaded xdctools_3_32_01_22_core folder.
-      * Make sure to download the one that is labeled "XDCtools Core without a JRE"
+7. Download [XDCtools 3.32](http://software-dl.ti.com/dsps/dsps_public_sw/sdo_sb/targetcontent/rtsc/3_32_01_22/index_FDS.html). Delete everything inside C:\ti\ccs930\xdctools_3_60_02_34_core and replace it with the contents of your downloaded xdctools_3_32_01_22_core folder.
+      * Make sure to ___not___ download the one that is labeled "XDCtools Core without a JRE"
+      
+8. Restart CCS. If you get a popup asking if you want to update XDCtools, ignore it and press cancel.
 
-6. The example code can be found in your project gpiointerrupt_EK_TM4C.../gpiointerrupt.c
+9. The example code can be found in your project gpiointerrupt_EK_TM4C.../gpiointerrupt.c
 
-7. Plug the board into your computer and set the board power switch so that the green LED turns on. Make sure to plug the USB into the same port as the one in the picture. Press the debug button and accept any dialog boxes. 
+10. Plug the board into your computer and set the board power switch so that the green LED turns on. Make sure to plug the USB into the same port as the one in the picture. Press the debug button and accept any dialog boxes. 
       * ![USB Port](https://i.imgur.com/XmdeF07.png)
       * ![Debug Button](https://i.imgur.com/fHwHgSs.png)
 
-9. Click on the debug button again. CCS will now flash your TM4C board with the new code. To test the code, press the bottom 2 buttons and make sure the red LED turns on.
+11. Click on the debug button again. CCS will now flash your TM4C board with the new code. To test the code, play around with the bottom 2 buttons and make sure the LED turns on.
