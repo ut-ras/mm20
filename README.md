@@ -14,4 +14,14 @@ TM4C Code Composer Studio Environment Setup
       * ![Resource Explorer Image 2](https://i.imgur.com/BMF9vZH.png)
       * ![Resource Explorer Install Image](https://i.imgur.com/8Pujq0D.png)
 
-4. To open up an example project, 
+4. To open up and test an example project, go to Resource Explorer -> TI-RTOS for TivaC -> EK-TM4C123GXL -> Driver Examples -> GPIO Examples -> GPIO Interrupt
+      * Press the import button ![Import](https://i.imgur.com/aZa60IC.png)
+      * Press OK on any dialogs that come up
+
+5. After the project is imported, it should appear in your project explorer. If you can't find the project explorer, click on View -> Project Explorer
+      * ![Project Explorer](https://i.imgur.com/gMqyJJb.png)
+
+6. The example code can be found in gpiointerrupt_EK_TM4C.../gpiointerrupt.c
+7. To flash the code onto your TM4C board, plug the board in and set the power switch so that the green LED turns on. Make sure to plug the USB into the same port as the one in       the picture. Press the debug button and accept any dialog boxes. 
+      * ![USB Port](https://i.imgur.com/XmdeF07.png)
+      * ![Debug Button](https://i.imgur.com/fHwHgSs.png)
