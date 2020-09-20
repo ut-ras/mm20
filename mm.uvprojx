@@ -300,6 +300,11 @@
               <FileType>1</FileType>
               <FilePath>.\lib\startup.c</FilePath>
             </File>
+            <File>
+              <FileName>motors.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lib\motors.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -379,6 +384,11 @@
               <FileName>launchpad.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\inc\launchpad.h</FilePath>
+            </File>
+            <File>
+              <FileName>motors.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\inc\motors.h</FilePath>
             </File>
           </Files>
         </Group>

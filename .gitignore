@@ -9,6 +9,8 @@
 !sim/
 !misc/
 !pcb/
+!CCS/
+!CCS/mm/
 !**/*.c
 !**/*.s
 !**/*.h
