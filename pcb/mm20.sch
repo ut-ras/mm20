@@ -146,17 +146,6 @@ F 3 "" H 4100 7300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x04_Female J?
-U 1 1 5DD81259
-P 7550 1300
-F 0 "J?" H 7578 1276 50  0000 L CNN
-F 1 "HC-05" H 7578 1185 50  0000 L CNN
-F 2 "" H 7550 1300 50  0001 C CNN
-F 3 "~" H 7550 1300 50  0001 C CNN
-	1    7550 1300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR?
 U 1 1 5DD8A4B8
 P 8450 1150
@@ -517,7 +506,7 @@ L Device:R R?
 U 1 1 5DFC1313
 P 9650 3400
 F 0 "R?" H 9720 3446 50  0000 L CNN
-F 1 "R" H 9720 3355 50  0000 L CNN
+F 1 "16" H 9720 3355 50  0000 L CNN
 F 2 "" V 9580 3400 50  0001 C CNN
 F 3 "~" H 9650 3400 50  0001 C CNN
 	1    9650 3400
@@ -528,7 +517,7 @@ L Device:R R?
 U 1 1 5DFC1319
 P 9350 3600
 F 0 "R?" V 9143 3600 50  0000 C CNN
-F 1 "R" V 9234 3600 50  0000 C CNN
+F 1 "130" V 9234 3600 50  0000 C CNN
 F 2 "" V 9280 3600 50  0001 C CNN
 F 3 "~" H 9350 3600 50  0001 C CNN
 	1    9350 3600
@@ -1395,6 +1384,17 @@ F 6 "The DRV8847 device is a dual H-bridge motor driver for industrial applicati
 F 7 "Texas Instruments" H 9550 5550 50  0001 L BNN "Field7"
 F 8 "Unavailable" H 9550 5550 50  0001 L BNN "Field8"
 	1    9550 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J?
+U 1 1 5DD81259
+P 7550 1300
+F 0 "J?" H 7578 1276 50  0000 L CNN
+F 1 "HC-05" H 7578 1185 50  0000 L CNN
+F 2 "" H 7550 1300 50  0001 C CNN
+F 3 "~" H 7550 1300 50  0001 C CNN
+	1    7550 1300
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
