@@ -9,6 +9,7 @@
 !sim/
 !misc/
 !pcb/
+!Python_Algo/
 !**/*.c
 !**/*.s
 !**/*.h
