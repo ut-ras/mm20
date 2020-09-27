@@ -15,4 +15,8 @@
 !**/*.ld
 !**/*.gdb
 !**/*.rules
+!**/*.lib
+!**/*.mod
+!**/*.sch
+!**/*.pro
 *.uvprojx
