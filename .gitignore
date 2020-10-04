@@ -1,5 +1,5 @@
 *
-
+!*/
 !.gitignore
 !Makefile
 !src/
@@ -9,10 +9,10 @@
 !sim/
 !misc/
 !pcb/
-!CCS/
+!CCS/**
 !CCS/mm/
 !**/*.c
-!**/*.s
+!**/*.st 
 !**/*.h
 !**/*.md
 !**/*.ld
