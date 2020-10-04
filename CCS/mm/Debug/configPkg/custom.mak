@@ -7,5 +7,5 @@
 #       or equal to the generated config header
 #
 linker.cmd: package/cfg/gpiointerrupt_pem4f.xdl
-	$(SED) 's"^\"\(package/cfg/gpiointerrupt_pem4fcfg.cmd\)\"$""\"C:/Users/zachr/workspace_v9/mm/Debug/configPkg/\1\""' package/cfg/gpiointerrupt_pem4f.xdl > $@
+	$(SED) 's"^\"\(package/cfg/gpiointerrupt_pem4fcfg.cmd\)\"$""\"C:/Users/zachr/MM20Firmware/mm20/CCS/mm/Debug/configPkg/\1\""' package/cfg/gpiointerrupt_pem4f.xdl > $@
 	-$(SETDATE) -r:max package/cfg/gpiointerrupt_pem4f.h compiler.opt compiler.opt.defs

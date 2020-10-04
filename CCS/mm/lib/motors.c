@@ -5,6 +5,20 @@
 #include "tivaware/qei.h"
 #include "tivaware/rom.h"
 #include "tivaware/sysctl.h"
+/* XDCtools Header files */
+#include <xdc/std.h>
+#include <xdc/runtime/System.h>
+
+/* BIOS Header files */
+#include <ti/sysbios/BIOS.h>
+#include <ti/sysbios/knl/Task.h>
+
+/* TI-RTOS Header files */
+#include <ti/drivers/GPIO.h>
+#include <ti/drivers/PWM.h>
+
+/* Example/Board Header files */
+#include "Board.h"
 
 // TODO: init pwm for drivers
 void init_motors() {
@@ -49,6 +63,48 @@ void reset_enc(void) {
     ROM_QEIPositionSet(QEI0_BASE, 0);
     ROM_QEIPositionSet(QEI1_BASE, 0);
 }
+
+Void pwmMotorFxn(UArg arg0, UArg arg1)
+{
+    PWM_Handle pwm1;
+    PWM_Handle pwm2 = NULL;
+    PWM_Params params;
+    uint16_t   pwmPeriod = 3000;      // Period and duty in microseconds
+    uint16_t   duty = 0;
+    uint16_t   dutyInc = 100;
+
+    PWM_Params_init(&params);
+    params.period = pwmPeriod;
+    pwm1 = PWM_open(Board_PWM0, &params);
+    if (pwm1 == NULL) {
+        System_abort("Board_PWM0 did not open");
+    }
+
+    if (Board_PWM1 != Board_PWM0) {
+        params.polarity = PWM_POL_ACTIVE_LOW;
+        pwm2 = PWM_open(Board_PWM1, &params);
+        if (pwm2 == NULL) {
+            System_abort("Board_PWM1 did not open");
+        }
+    }
+
+    /* Loop forever incrementing the PWM duty */
+    while (1) {
+        PWM_setDuty(pwm1, duty);
+
+        if (pwm2) {
+            PWM_setDuty(pwm2, duty);
+        }
+
+        duty = (duty + dutyInc);
+        if (duty == pwmPeriod || (!duty)) {
+            dutyInc = - dutyInc;
+        }
+
+        Task_sleep((UInt) arg0);
+    }
+}
+
 
 void set_left(float speed) {
     // TODO

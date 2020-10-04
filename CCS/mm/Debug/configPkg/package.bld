@@ -11,7 +11,7 @@ var makeAssembly = false;
 var Executable = xdc.module('xdc.bld.Executable');
 
 var exeOpts = new Executable.Attrs({
-        cfgScript: 'C:/Users/zachr/workspace_v9/mm/gpiointerrupt.cfg',
+        cfgScript: 'C:/Users/zachr/MM20Firmware/mm20/CCS/mm/gpiointerrupt.cfg',
         profile: 'release',
         cfgHome: 'configPkg',
 });
@@ -41,7 +41,7 @@ else {
 
 var thisObj = {
     cfg:        '../gpiointerrupt.cfg',
-    outputPath: 'C:/Users/zachr/workspace_v9/mm/Debug/configPkg',
+    outputPath: 'C:/Users/zachr/MM20Firmware/mm20/CCS/mm/Debug/configPkg',
     exeName:    'gpiointerrupt' + suffix,
     exeIntName: 'gpiointerrupt' + suffix.replace('.', '_'),
     targ:       targ,

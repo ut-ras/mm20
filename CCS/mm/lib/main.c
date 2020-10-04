@@ -77,6 +77,9 @@ int main(void) {
                        SYSCTL_OSC_MAIN);
     ROM_SysTickEnable();
     launchpad_init();
+    Board_initGeneral();
+    Board_initPWM();
+    Board_initGPIO();
     ROM_GPIOPinTypeGPIOOutput(GPIO_PORTA_BASE, GPIO_PIN_7);
     timer0_init();
     Task_Params tskParams;

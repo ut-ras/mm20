@@ -9,14 +9,14 @@
  */
 
 
--l"C:\Users\zachr\workspace_v9\mm\Debug\configPkg\package\cfg\gpiointerrupt_pem4f.oem4f"
+-l"C:\Users\zachr\MM20Firmware\mm20\CCS\mm\Debug\configPkg\package\cfg\gpiointerrupt_pem4f.oem4f"
 -l"C:\ti\tirtos_tivac_2_16_00_08\packages\ti\tirtos\utils\lib\release\ti.tirtos.utils.aem4f"
 -l"C:/ti/tirtos_tivac_2_16_00_08/products/tidrivers_tivac_2_16_00_08/packages/ti/mw/wifi/cc3x00/lib/cc3x00_host_driver.aem4f"
 -l"C:/ti/tirtos_tivac_2_16_00_08/products/tidrivers_tivac_2_16_00_08/packages/ti/drivers/lib/drivers_tivaware.aem4f"
 -l"C:/ti/tirtos_tivac_2_16_00_08/products/tidrivers_tivac_2_16_00_08/packages/ti/drivers/lib/drivers_wifi_tivaware.aem4f"
 -l"C:\ti\tirtos_tivac_2_16_00_08\products\tidrivers_tivac_2_16_00_08\packages\ti\mw\fatfs\lib\release\ti.mw.fatfs.aem4f"
 -l"C:/ti/tirtos_tivac_2_16_00_08/products/tidrivers_tivac_2_16_00_08/packages/ti/drivers/ports/lib/tirtosport.aem4f"
--l"C:\Users\zachr\workspace_v9\mm\src\sysbios\sysbios.aem4f"
+-l"C:\Users\zachr\MM20Firmware\mm20\CCS\mm\src\sysbios\sysbios.aem4f"
 -l"C:\ti\tirtos_tivac_2_16_00_08\products\bios_6_45_01_29\packages\ti\catalog\arm\cortexm4\tiva\ce\lib\Boot.aem4f"
 -l"C:\ti\tirtos_tivac_2_16_00_08\products\bios_6_45_01_29\packages\ti\targets\arm\rtsarm\lib\ti.targets.arm.rtsarm.aem4f"
 -l"C:\ti\tirtos_tivac_2_16_00_08\products\bios_6_45_01_29\packages\ti\targets\arm\rtsarm\lib\boot.aem4f"
