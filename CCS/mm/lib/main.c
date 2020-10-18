@@ -5,6 +5,12 @@
 #include "tivaware/rom.h"
 #include "tivaware/sysctl.h"
 #include "tivaware/timer.h"
+#include "driverlib/adc.h"
+#include "driverlib/debug.h"
+#include "driverlib/fpu.h"
+#include "driverlib/gpio.h"
+#include "driverlib/pin_map.h"
+#include "driverlib/sysctl.h"
 #include <math.h>
 #include <stdint.h>
 #include <stdio.h>
@@ -62,32 +68,80 @@ void timer0a_handler(void) {
 void LEDtask(UArg arg0, UArg arg1)
 {
     while (1) {
-            blink_success();
-            printf("left: %d\t\tright:%d\n\r", left_switch(), right_switch());
-            Task_sleep(1000);;
-        }
+        blink_success();
+        printf("left: %d\t\tright:%d\n\r", left_switch(), right_switch());
+        Task_sleep(1000);
+    }
+}
+
+void Task_WallDetector(UArg arg0, UArg arg1) {
+    //  cycle through all 4 sensors
+
+    /*
+     *  Test circuit Pinout
+     *  Emitter On/Off Gate: PD0
+     *  Receiver Voltage Level: PD1
+     */
+
+    //  1. turn on emitter
+
+    //  2. wait for emitter to fully turn on
+
+    //  3. read receiver voltage using ADC
+    uint32_t adcOut=0;
+
+    ADCSequenceConfigure(ADC0_BASE, 0, ADC_TRIGGER_PROCESSOR, 0);
+    ADCSequenceStepConfigure(ADC0_BASE, 0, 0, ADC_CTL_IE | ADC_CTL_END
+                            | ADC_CTL_CH7);
+    ADCSequenceEnable(ADC0_BASE, 0);
+    ADCIntClear(ADC0_BASE, 0);
+
+    ADCSequenceConfigure(ADC1_BASE, 0, ADC_TRIGGER_PROCESSOR, 0);
+    ADCSequenceStepConfigure(ADC1_BASE, 0, 0, ADC_CTL_IE | ADC_CTL_END
+                            | ADC_CTL_CH6);
+    ADCSequenceEnable(ADC1_BASE, 0);
+    ADCIntClear(ADC1_BASE, 0);
+
+    ADCProcessorTrigger(ADC0_BASE, 0);
+    while(!ADCIntStatus(ADC0_BASE, 0, false)) {}
+    ADCIntClear(ADC0_BASE, 0);
+    ADCSequenceDataGet(ADC0_BASE, 0, &adcOut0);
+
+    ADCProcessorTrigger(ADC1_BASE, 0);
+    while(!ADCIntStatus(ADC1_BASE, 0, false)) {}
+    ADCIntClear(ADC1_BASE, 0);
+    ADCSequenceDataGet(ADC1_BASE, 0, &adcOut1);
+
+    //  4. turn off emitter
+
 }
 
 Task_Struct tsk0Struct;
+Task_Struct tsk1Struct;
 UInt8 tsk0Stack[TASKSTACKSIZE];
-Task_Handle task;
+UInt8 tsk1Stack[TASKSTACKSIZE];
 
 int main(void) {
     ROM_SysCtlClockSet(SYSCTL_SYSDIV_2_5 | SYSCTL_USE_PLL | SYSCTL_XTAL_16MHZ |
                        SYSCTL_OSC_MAIN);
     ROM_SysTickEnable();
     launchpad_init();
+
     Board_initGeneral();
     Board_initPWM();
     Board_initGPIO();
-    ROM_GPIOPinTypeGPIOOutput(GPIO_PORTA_BASE, GPIO_PIN_7);
+
     timer0_init();
+
+    //  Task Initialization
     Task_Params tskParams;
     Task_Params_init(&tskParams);
     tskParams.stackSize = TASKSTACKSIZE;
     tskParams.stack = &tsk0Stack;
-    tskParams.arg0 = 50;
-    Task_construct(&tsk0Struct, (Task_FuncPtr)LEDtask, &tskParams, NULL);
-    BIOS_start();
+    tskParams.arg0 = 0;
 
+//    Task_construct(&tsk0Struct, (Task_FuncPtr)LEDtask, &tskParams, NULL);
+    Task_construct(&tsk1Struct, (Task_FuncPtr)Task_WallDetector, &tskParams, NULL);
+
+    BIOS_start();   //  This must be the very last line!
 }

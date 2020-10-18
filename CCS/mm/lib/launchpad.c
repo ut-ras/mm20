@@ -10,6 +10,10 @@ void launchpad_init(void) {
     ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
     ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOA);
     ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_UART0);
+
+    // Port A
+    ROM_GPIOPinTypeGPIOOutput(GPIO_PORTA_BASE, GPIO_PIN_7);
+
     // Port F
     ROM_GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, 0xE);
     ROM_GPIOPinTypeGPIOInput(GPIO_PORTF_BASE, 0x11);
