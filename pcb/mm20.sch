@@ -159,7 +159,6 @@ $EndComp
 Wire Wire Line
 	12700 8600 13050 8600
 Connection ~ 13050 8600
-<<<<<<< Updated upstream
 Wire Wire Line
 	13050 8600 13650 8600
 Connection ~ 13650 8600
@@ -167,15 +166,6 @@ Wire Wire Line
 	13650 8600 14250 8600
 Connection ~ 14250 8600
 Wire Wire Line
-=======
-Wire Wire Line
-	13050 8600 13650 8600
-Connection ~ 13650 8600
-Wire Wire Line
-	13650 8600 14250 8600
-Connection ~ 14250 8600
-Wire Wire Line
->>>>>>> Stashed changes
 	14250 8600 14850 8600
 $Comp
 L power:+3.3V #PWR0104
@@ -293,11 +283,7 @@ U 1 1 5DF1DD57
 P 2800 3650
 F 0 "U2" H 2800 6126 50  0000 C CNN
 F 1 "TM4C123GH6PMI" H 2800 3650 50  0001 L BNN
-<<<<<<< Updated upstream
 F 2 "QFP50P1200X1200X160-64N" H 2800 3650 50  0001 L BNN
-=======
-F 2 "" H 2800 3650 50  0001 L BNN
->>>>>>> Stashed changes
 F 3 "TM4C123GH6PMI" H 2800 3650 50  0001 L BNN
 F 4 "LQFP-64 Texas Instruments" H 2800 3650 50  0001 L BNN "Field4"
 F 5 "None" H 2800 3650 50  0001 L BNN "Field5"
@@ -319,17 +305,10 @@ F 3 "" H 3600 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-<<<<<<< Updated upstream
 L Transistor_BJT:MMBT3904 Q?
 U 1 1 5DFC12F6
 P 8700 3950
 F 0 "Q?" H 8891 3996 50  0000 L CNN
-=======
-L Transistor_BJT:MMBT3904 Q1
-U 1 1 5DFC12F6
-P 8700 3950
-F 0 "Q1" H 8891 3996 50  0000 L CNN
->>>>>>> Stashed changes
 F 1 "MMBT3904" H 8891 3905 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 8900 3875 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 8700 3950 50  0001 L CNN
@@ -337,14 +316,10 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 8700 3950 50  000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R6
+L Device:R R?
 U 1 1 5DFC1313
 P 8800 3600
-<<<<<<< Updated upstream
 F 0 "R?" H 8870 3646 50  0000 L CNN
-=======
-F 0 "R6" H 8870 3646 50  0000 L CNN
->>>>>>> Stashed changes
 F 1 "16" H 8870 3555 50  0000 L CNN
 F 2 "" V 8730 3600 50  0001 C CNN
 F 3 "~" H 8800 3600 50  0001 C CNN
@@ -352,14 +327,10 @@ F 3 "~" H 8800 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R4
+L Device:R R?
 U 1 1 5DFC1319
 P 8500 3800
-<<<<<<< Updated upstream
 F 0 "R?" V 8293 3800 50  0000 C CNN
-=======
-F 0 "R4" V 8293 3800 50  0000 C CNN
->>>>>>> Stashed changes
 F 1 "130" V 8384 3800 50  0000 C CNN
 F 2 "" V 8430 3800 50  0001 C CNN
 F 3 "~" H 8500 3800 50  0001 C CNN
@@ -367,18 +338,12 @@ F 3 "~" H 8500 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEFT4300:TEFT4300 Q2
+L TEFT4300:TEFT4300 Q?
 U 1 1 5DFDE997
 P 9400 3600
-<<<<<<< Updated upstream
 F 0 "Q?" H 9605 3646 50  0000 L CNN
 F 1 "TEFT4300" H 9605 3555 50  0000 L CNN
 F 2 "XDCR_TEFT4300" H 9400 3600 50  0001 L BNN
-=======
-F 0 "Q2" H 9605 3646 50  0000 L CNN
-F 1 "TEFT4300" H 9605 3555 50  0000 L CNN
-F 2 "" H 9400 3600 50  0001 L BNN
->>>>>>> Stashed changes
 F 3 "TEFT4300" H 9400 3600 50  0001 L BNN
 F 4 "Radial Vishay" H 9400 3600 50  0001 L BNN "Field4"
 F 5 "None" H 9400 3600 50  0001 L BNN "Field5"
@@ -389,14 +354,10 @@ F 8 "Unavailable" H 9400 3600 50  0001 L BNN "Field8"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R8
+L Device:R R?
 U 1 1 5DFDE9A3
 P 9500 4050
-<<<<<<< Updated upstream
 F 0 "R?" H 9570 4096 50  0000 L CNN
-=======
-F 0 "R8" H 9570 4096 50  0000 L CNN
->>>>>>> Stashed changes
 F 1 "1.8k" H 9570 4005 50  0000 L CNN
 F 2 "" V 9430 4050 50  0001 C CNN
 F 3 "~" H 9500 4050 50  0001 C CNN
@@ -886,17 +847,10 @@ Connection ~ 6400 9000
 Wire Wire Line
 	6400 9000 6600 9000
 $Comp
-<<<<<<< Updated upstream
 L Device:C_Small C?
 U 1 1 5DE310AD
 P 9300 2850
 F 0 "C?" V 9071 2850 50  0000 C CNN
-=======
-L Device:C_Small C18
-U 1 1 5DE310AD
-P 9300 2850
-F 0 "C18" V 9071 2850 50  0000 C CNN
->>>>>>> Stashed changes
 F 1 "3.3uF" V 9162 2850 50  0000 C CNN
 F 2 "" H 9300 2850 50  0001 C CNN
 F 3 "~" H 9300 2850 50  0001 C CNN
@@ -1076,11 +1030,7 @@ U 1 1 5DEB3ACE
 P 2150 8950
 F 0 "U1" H 2150 9817 50  0000 C CNN
 F 1 "DRV8847PWR" H 2150 9726 50  0000 C CNN
-<<<<<<< Updated upstream
 F 2 "SOP65P640X120-16N" H 2150 8950 50  0001 L BNN
-=======
-F 2 "" H 2150 8950 50  0001 L BNN
->>>>>>> Stashed changes
 F 3 "DRV8847PWR" H 2150 8950 50  0001 L BNN
 F 4 "TSSOP-16 Texas Instruments" H 2150 8950 50  0001 L BNN "Field4"
 F 5 "None" H 2150 8950 50  0001 L BNN "Field5"
@@ -1097,21 +1047,12 @@ Wire Wire Line
 Text Label 8500 3650 1    50   ~ 0
 Emitter0
 $Comp
-<<<<<<< Updated upstream
 L SFH_4545:SFH_4545 D?
 U 1 1 5DFC1301
 P 8800 3250
 F 0 "D?" V 8704 3444 50  0000 L CNN
 F 1 "SFH_4545" V 8795 3444 50  0000 L CNN
 F 2 "DIO_SFH_4545" H 8800 3250 50  0001 L BNN
-=======
-L SFH_4545:SFH_4545 D2
-U 1 1 5DFC1301
-P 8800 3250
-F 0 "D2" V 8704 3444 50  0000 L CNN
-F 1 "SFH_4545" V 8795 3444 50  0000 L CNN
-F 2 "" H 8800 3250 50  0001 L BNN
->>>>>>> Stashed changes
 F 3 "SFH 4545" H 8800 3250 50  0001 L BNN
 F 4 "Radial Osram Opto" H 8800 3250 50  0001 L BNN "Field4"
 F 5 "None" H 8800 3250 50  0001 L BNN "Field5"
@@ -1174,7 +1115,6 @@ Wire Wire Line
 Wire Wire Line
 	4150 4300 4150 4650
 Connection ~ 4150 4650
-<<<<<<< Updated upstream
 Wire Wire Line
 	3850 4650 3850 4850
 Wire Wire Line
@@ -1221,54 +1161,6 @@ Wire Wire Line
 Wire Wire Line
 	7450 8300 7950 8300
 $Comp
-=======
-Wire Wire Line
-	3850 4650 3850 4850
-Wire Wire Line
-	3850 4300 3850 4650
-Connection ~ 3850 4650
-$Comp
-L Device:Crystal Y1
-U 1 1 5DF4B99D
-P 4000 4650
-F 0 "Y1" H 4000 4918 50  0000 C CNN
-F 1 "16MHz" H 4000 4827 50  0000 C CNN
-F 2 "" H 4000 4650 50  0001 C CNN
-F 3 "~" H 4000 4650 50  0001 C CNN
-	1    4000 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Linear:LM1117-5.0 U3
-U 1 1 5DD7B36C
-P 7950 8000
-F 0 "U3" H 7950 8242 50  0000 C CNN
-F 1 "LM1117-5.0" H 7950 8151 50  0000 C CNN
-F 2 "" H 7950 8000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 7950 8000 50  0001 C CNN
-	1    7950 8000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0133
-U 1 1 5DD7C9DA
-P 7950 8350
-F 0 "#PWR0133" H 7950 8100 50  0001 C CNN
-F 1 "GND" H 7955 8177 50  0000 C CNN
-F 2 "" H 7950 8350 50  0001 C CNN
-F 3 "" H 7950 8350 50  0001 C CNN
-	1    7950 8350
-	1    0    0    -1  
-$EndComp
-Connection ~ 7950 8300
-Wire Wire Line
-	7950 8300 8350 8300
-Wire Wire Line
-	7950 8300 7950 8350
-Wire Wire Line
-	7450 8300 7950 8300
-$Comp
->>>>>>> Stashed changes
 L power:+8V #PWR0134
 U 1 1 5DE0B06E
 P 7350 8000
@@ -1458,7 +1350,6 @@ Motor3
 Text Label 13100 6650 2    50   ~ 0
 Button1
 Connection ~ 12900 6200
-<<<<<<< Updated upstream
 Wire Wire Line
 	12900 6200 13200 6200
 Wire Wire Line
@@ -1591,64 +1482,11 @@ F 1 "130" V 14284 6850 50  0000 C CNN
 F 2 "" V 14330 6850 50  0001 C CNN
 F 3 "~" H 14400 6850 50  0001 C CNN
 	1    14400 6850
-=======
-Wire Wire Line
-	12900 6200 13200 6200
-Wire Wire Line
-	12900 6200 12900 6150
-Wire Wire Line
-	12600 6200 12900 6200
-$Comp
-L power:+3.3V #PWR0127
-U 1 1 5DF22E33
-P 12900 6150
-F 0 "#PWR0127" H 12900 6000 50  0001 C CNN
-F 1 "+3.3V" H 12915 6323 50  0000 C CNN
-F 2 "" H 12900 6150 50  0001 C CNN
-F 3 "" H 12900 6150 50  0001 C CNN
-	1    12900 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R14
-U 1 1 5F8EAA52
-P 12600 6450
-F 0 "R14" H 12670 6496 50  0000 L CNN
-F 1 "10k" H 12670 6405 50  0000 L CNN
-F 2 "" V 12530 6450 50  0001 C CNN
-F 3 "~" H 12600 6450 50  0001 C CNN
-	1    12600 6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R16
-U 1 1 5F8EEE57
-P 13200 6450
-F 0 "R16" H 13270 6496 50  0000 L CNN
-F 1 "10k" H 13270 6405 50  0000 L CNN
-F 2 "" V 13130 6450 50  0001 C CNN
-F 3 "~" H 13200 6450 50  0001 C CNN
-	1    13200 6450
-	1    0    0    -1  
-$EndComp
-Text Label 12500 6650 2    50   ~ 0
-Button0
-$Comp
-L Switch:SW_Push SW3
-U 1 1 5DF074E7
-P 12600 6900
-F 0 "SW3" V 12554 7048 50  0000 L CNN
-F 1 "SW_Push" V 12645 7048 50  0000 L CNN
-F 2 "" H 12600 7100 50  0001 C CNN
-F 3 "~" H 12600 7100 50  0001 C CNN
-	1    12600 6900
->>>>>>> Stashed changes
 	0    1    1    0   
 $EndComp
 Text Label 14250 6850 2    50   ~ 0
 Buzzer
 $Comp
-<<<<<<< Updated upstream
 L Device:R R?
 U 1 1 5F96710C
 P 14750 6450
@@ -1760,217 +1598,13 @@ F 6 "Vishay Semiconductor" H 11400 3600 50  0001 L BNN "Field6"
 F 7 "Phototransistor IR Chip Silicon 925nm 2-Pin T-1" H 11400 3600 50  0001 L BNN "Field7"
 F 8 "Unavailable" H 11400 3600 50  0001 L BNN "Field8"
 	1    11400 3600
-=======
-L Switch:SW_Push SW4
-U 1 1 5DF07DA6
-P 13200 6900
-F 0 "SW4" V 13154 7048 50  0000 L CNN
-F 1 "SW_Push" V 13245 7048 50  0000 L CNN
-F 2 "" H 13200 7100 50  0001 C CNN
-F 3 "~" H 13200 7100 50  0001 C CNN
-	1    13200 6900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	13200 6600 13200 6650
-Wire Wire Line
-	12600 6700 12600 6650
-Wire Wire Line
-	12600 6650 12500 6650
-Connection ~ 12600 6650
-Wire Wire Line
-	12600 6650 12600 6600
-Wire Wire Line
-	13200 6650 13100 6650
-Connection ~ 13200 6650
-Wire Wire Line
-	13200 6650 13200 6700
-$Comp
-L power:GND #PWR0138
-U 1 1 5F91E2CB
-P 12600 7100
-F 0 "#PWR0138" H 12600 6850 50  0001 C CNN
-F 1 "GND" H 12605 6927 50  0000 C CNN
-F 2 "" H 12600 7100 50  0001 C CNN
-F 3 "" H 12600 7100 50  0001 C CNN
-	1    12600 7100
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0139
-U 1 1 5F922B70
-P 13200 7100
-F 0 "#PWR0139" H 13200 6850 50  0001 C CNN
-F 1 "GND" H 13205 6927 50  0000 C CNN
-F 2 "" H 13200 7100 50  0001 C CNN
-F 3 "" H 13200 7100 50  0001 C CNN
-	1    13200 7100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14850 6550 14850 6650
-$Comp
-L power:GND #PWR0136
-U 1 1 5DF436FA
-P 14850 7050
-F 0 "#PWR0136" H 14850 6800 50  0001 C CNN
-F 1 "GND" H 14855 6877 50  0000 C CNN
-F 2 "" H 14850 7050 50  0001 C CNN
-F 3 "" H 14850 7050 50  0001 C CNN
-	1    14850 7050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:MMBT3904 Q3
-U 1 1 5DF436F4
-P 14750 6850
-F 0 "Q3" H 14941 6896 50  0000 L CNN
-F 1 "MMBT3904" H 14941 6805 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 14950 6775 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 14750 6850 50  0001 L CNN
-	1    14750 6850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R9
-U 1 1 5DF43700
-P 14400 6850
-F 0 "R9" V 14193 6850 50  0000 C CNN
-F 1 "130" V 14284 6850 50  0000 C CNN
-F 2 "" V 14330 6850 50  0001 C CNN
-F 3 "~" H 14400 6850 50  0001 C CNN
-	1    14400 6850
-	0    1    1    0   
-$EndComp
-Text Label 14250 6850 2    50   ~ 0
-Buzzer
-$Comp
-L Device:R R19
-U 1 1 5F96710C
-P 14750 6450
-F 0 "R19" V 14543 6450 50  0000 C CNN
-F 1 "1k" V 14634 6450 50  0000 C CNN
-F 2 "" V 14680 6450 50  0001 C CNN
-F 3 "~" H 14750 6450 50  0001 C CNN
-	1    14750 6450
->>>>>>> Stashed changes
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14750 6300 14750 6250
-Wire Wire Line
-	14750 6250 14850 6250
-Connection ~ 14850 6250
-Wire Wire Line
-	14850 6250 14850 6350
-Wire Wire Line
-	14750 6600 14750 6650
-Wire Wire Line
-	14750 6650 14850 6650
-Connection ~ 14850 6650
-Text Notes 14600 7150 2    51   ~ 0
-???? No data\non buzzer\ncurrent
-Connection ~ 3600 5550
-Wire Wire Line
-	3600 5550 3600 5650
-Connection ~ 3600 5650
-Wire Wire Line
-	3600 5650 3600 5750
-Connection ~ 3600 5750
-Wire Wire Line
-	3600 5750 3600 5850
-Connection ~ 3600 5850
-Wire Wire Line
-	3600 5850 3600 5950
-Connection ~ 3600 5950
-Wire Wire Line
-	3600 5950 3600 6050
-Wire Notes Line
-	700  1000 4550 1000
-Wire Notes Line
-	700  6400 4550 6400
-Wire Wire Line
-	1050 3450 2000 3450
-Wire Wire Line
-	1050 3550 2000 3550
-Wire Wire Line
-	1050 3650 2000 3650
-Wire Wire Line
-	1050 3750 2000 3750
-Text Notes 800  4050 0    51   ~ 0
-male\nheaders
-$Comp
-<<<<<<< Updated upstream
 L Device:R R?
 U 1 1 5F7B360E
 P 11500 4050
 F 0 "R?" H 11570 4096 50  0000 L CNN
-=======
-L power:GND #PWR0140
-U 1 1 5F779655
-P 9500 4200
-F 0 "#PWR0140" H 9500 3950 50  0001 C CNN
-F 1 "GND" H 9505 4027 50  0000 C CNN
-F 2 "" H 9500 4200 50  0001 C CNN
-F 3 "" H 9500 4200 50  0001 C CNN
-	1    9500 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:MMBT3904 Q4
-U 1 1 5F7B35EB
-P 10700 3950
-F 0 "Q4" H 10891 3996 50  0000 L CNN
-F 1 "MMBT3904" H 10891 3905 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 10900 3875 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 10700 3950 50  0001 L CNN
-	1    10700 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R11
-U 1 1 5F7B35F7
-P 10800 3600
-F 0 "R11" H 10870 3646 50  0000 L CNN
-F 1 "16" H 10870 3555 50  0000 L CNN
-F 2 "" V 10730 3600 50  0001 C CNN
-F 3 "~" H 10800 3600 50  0001 C CNN
-	1    10800 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R10
-U 1 1 5F7B35FD
-P 10500 3800
-F 0 "R10" V 10293 3800 50  0000 C CNN
-F 1 "130" V 10384 3800 50  0000 C CNN
-F 2 "" V 10430 3800 50  0001 C CNN
-F 3 "~" H 10500 3800 50  0001 C CNN
-	1    10500 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L TEFT4300:TEFT4300 Q5
-U 1 1 5F7B3608
-P 11400 3600
-F 0 "Q5" H 11605 3646 50  0000 L CNN
-F 1 "TEFT4300" H 11605 3555 50  0000 L CNN
-F 2 "" H 11400 3600 50  0001 L BNN
-F 3 "TEFT4300" H 11400 3600 50  0001 L BNN
-F 4 "Radial Vishay" H 11400 3600 50  0001 L BNN "Field4"
-F 5 "None" H 11400 3600 50  0001 L BNN "Field5"
-F 6 "Vishay Semiconductor" H 11400 3600 50  0001 L BNN "Field6"
-F 7 "Phototransistor IR Chip Silicon 925nm 2-Pin T-1" H 11400 3600 50  0001 L BNN "Field7"
-F 8 "Unavailable" H 11400 3600 50  0001 L BNN "Field8"
-	1    11400 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R12
-U 1 1 5F7B360E
-P 11500 4050
-F 0 "R12" H 11570 4096 50  0000 L CNN
->>>>>>> Stashed changes
 F 1 "1.8k" H 11570 4005 50  0000 L CNN
 F 2 "" V 11430 4050 50  0001 C CNN
 F 3 "~" H 11500 4050 50  0001 C CNN
@@ -1987,17 +1621,10 @@ Connection ~ 11500 3850
 Wire Wire Line
 	11500 3850 11500 3900
 $Comp
-<<<<<<< Updated upstream
 L Device:C_Small C?
 U 1 1 5F7B3619
 P 11300 2850
 F 0 "C?" V 11071 2850 50  0000 C CNN
-=======
-L Device:C_Small C20
-U 1 1 5F7B3619
-P 11300 2850
-F 0 "C20" V 11071 2850 50  0000 C CNN
->>>>>>> Stashed changes
 F 1 "3.3uF" V 11162 2850 50  0000 C CNN
 F 2 "" H 11300 2850 50  0001 C CNN
 F 3 "~" H 11300 2850 50  0001 C CNN
@@ -2042,21 +1669,12 @@ Wire Wire Line
 Text Label 10500 3650 1    50   ~ 0
 Emitter1
 $Comp
-<<<<<<< Updated upstream
 L SFH_4545:SFH_4545 D?
 U 1 1 5F7B3639
 P 10800 3250
 F 0 "D?" V 10704 3444 50  0000 L CNN
 F 1 "SFH_4545" V 10795 3444 50  0000 L CNN
 F 2 "DIO_SFH_4545" H 10800 3250 50  0001 L BNN
-=======
-L SFH_4545:SFH_4545 D7
-U 1 1 5F7B3639
-P 10800 3250
-F 0 "D7" V 10704 3444 50  0000 L CNN
-F 1 "SFH_4545" V 10795 3444 50  0000 L CNN
-F 2 "" H 10800 3250 50  0001 L BNN
->>>>>>> Stashed changes
 F 3 "SFH 4545" H 10800 3250 50  0001 L BNN
 F 4 "Radial Osram Opto" H 10800 3250 50  0001 L BNN "Field4"
 F 5 "None" H 10800 3250 50  0001 L BNN "Field5"
@@ -2078,17 +1696,10 @@ F 3 "" H 11500 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-<<<<<<< Updated upstream
 L Transistor_BJT:MMBT3904 Q?
 U 1 1 5F7C4D04
 P 12700 4000
 F 0 "Q?" H 12891 4046 50  0000 L CNN
-=======
-L Transistor_BJT:MMBT3904 Q6
-U 1 1 5F7C4D04
-P 12700 4000
-F 0 "Q6" H 12891 4046 50  0000 L CNN
->>>>>>> Stashed changes
 F 1 "MMBT3904" H 12891 3955 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 12900 3925 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 12700 4000 50  0001 L CNN
@@ -2096,17 +1707,10 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 12700 4000 50  00
 	1    0    0    -1  
 $EndComp
 $Comp
-<<<<<<< Updated upstream
 L Device:R R?
 U 1 1 5F7C4D10
 P 12800 3650
 F 0 "R?" H 12870 3696 50  0000 L CNN
-=======
-L Device:R R15
-U 1 1 5F7C4D10
-P 12800 3650
-F 0 "R15" H 12870 3696 50  0000 L CNN
->>>>>>> Stashed changes
 F 1 "16" H 12870 3605 50  0000 L CNN
 F 2 "" V 12730 3650 50  0001 C CNN
 F 3 "~" H 12800 3650 50  0001 C CNN
@@ -2114,17 +1718,10 @@ F 3 "~" H 12800 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-<<<<<<< Updated upstream
 L Device:R R?
 U 1 1 5F7C4D16
 P 12500 3850
 F 0 "R?" V 12293 3850 50  0000 C CNN
-=======
-L Device:R R13
-U 1 1 5F7C4D16
-P 12500 3850
-F 0 "R13" V 12293 3850 50  0000 C CNN
->>>>>>> Stashed changes
 F 1 "130" V 12384 3850 50  0000 C CNN
 F 2 "" V 12430 3850 50  0001 C CNN
 F 3 "~" H 12500 3850 50  0001 C CNN
@@ -2132,21 +1729,12 @@ F 3 "~" H 12500 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-<<<<<<< Updated upstream
 L TEFT4300:TEFT4300 Q?
 U 1 1 5F7C4D21
 P 13400 3650
 F 0 "Q?" H 13605 3696 50  0000 L CNN
 F 1 "TEFT4300" H 13605 3605 50  0000 L CNN
 F 2 "XDCR_TEFT4300" H 13400 3650 50  0001 L BNN
-=======
-L TEFT4300:TEFT4300 Q7
-U 1 1 5F7C4D21
-P 13400 3650
-F 0 "Q7" H 13605 3696 50  0000 L CNN
-F 1 "TEFT4300" H 13605 3605 50  0000 L CNN
-F 2 "" H 13400 3650 50  0001 L BNN
->>>>>>> Stashed changes
 F 3 "TEFT4300" H 13400 3650 50  0001 L BNN
 F 4 "Radial Vishay" H 13400 3650 50  0001 L BNN "Field4"
 F 5 "None" H 13400 3650 50  0001 L BNN "Field5"
@@ -2157,17 +1745,10 @@ F 8 "Unavailable" H 13400 3650 50  0001 L BNN "Field8"
 	1    0    0    -1  
 $EndComp
 $Comp
-<<<<<<< Updated upstream
 L Device:R R?
 U 1 1 5F7C4D27
 P 13500 4100
 F 0 "R?" H 13570 4146 50  0000 L CNN
-=======
-L Device:R R17
-U 1 1 5F7C4D27
-P 13500 4100
-F 0 "R17" H 13570 4146 50  0000 L CNN
->>>>>>> Stashed changes
 F 1 "1.8k" H 13570 4055 50  0000 L CNN
 F 2 "" V 13430 4100 50  0001 C CNN
 F 3 "~" H 13500 4100 50  0001 C CNN
@@ -2184,17 +1765,10 @@ Connection ~ 13500 3900
 Wire Wire Line
 	13500 3900 13500 3950
 $Comp
-<<<<<<< Updated upstream
 L Device:C_Small C?
 U 1 1 5F7C4D32
 P 13300 2900
 F 0 "C?" V 13071 2900 50  0000 C CNN
-=======
-L Device:C_Small C21
-U 1 1 5F7C4D32
-P 13300 2900
-F 0 "C21" V 13071 2900 50  0000 C CNN
->>>>>>> Stashed changes
 F 1 "3.3uF" V 13162 2900 50  0000 C CNN
 F 2 "" H 13300 2900 50  0001 C CNN
 F 3 "~" H 13300 2900 50  0001 C CNN
@@ -2239,21 +1813,12 @@ Wire Wire Line
 Text Label 12500 3700 1    50   ~ 0
 Emitter2
 $Comp
-<<<<<<< Updated upstream
 L SFH_4545:SFH_4545 D?
 U 1 1 5F7C4D52
 P 12800 3300
 F 0 "D?" V 12704 3494 50  0000 L CNN
 F 1 "SFH_4545" V 12795 3494 50  0000 L CNN
 F 2 "DIO_SFH_4545" H 12800 3300 50  0001 L BNN
-=======
-L SFH_4545:SFH_4545 D8
-U 1 1 5F7C4D52
-P 12800 3300
-F 0 "D8" V 12704 3494 50  0000 L CNN
-F 1 "SFH_4545" V 12795 3494 50  0000 L CNN
-F 2 "" H 12800 3300 50  0001 L BNN
->>>>>>> Stashed changes
 F 3 "SFH 4545" H 12800 3300 50  0001 L BNN
 F 4 "Radial Osram Opto" H 12800 3300 50  0001 L BNN "Field4"
 F 5 "None" H 12800 3300 50  0001 L BNN "Field5"
@@ -2275,17 +1840,10 @@ F 3 "" H 13500 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-<<<<<<< Updated upstream
 L Transistor_BJT:MMBT3904 Q?
 U 1 1 5F808B12
 P 14700 4000
 F 0 "Q?" H 14891 4046 50  0000 L CNN
-=======
-L Transistor_BJT:MMBT3904 Q8
-U 1 1 5F808B12
-P 14700 4000
-F 0 "Q8" H 14891 4046 50  0000 L CNN
->>>>>>> Stashed changes
 F 1 "MMBT3904" H 14891 3955 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 14900 3925 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 14700 4000 50  0001 L CNN
@@ -2293,22 +1851,14 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 14700 4000 50  00
 	1    0    0    -1  
 $EndComp
 $Comp
-<<<<<<< Updated upstream
 L Device:R R?
 U 1 1 5F808B1E
 P 14800 3650
 F 0 "R?" H 14870 3696 50  0000 L CNN
-=======
-L Device:R R20
-U 1 1 5F808B1E
-P 14800 3650
-F 0 "R20" H 14870 3696 50  0000 L CNN
->>>>>>> Stashed changes
 F 1 "16" H 14870 3605 50  0000 L CNN
 F 2 "" V 14730 3650 50  0001 C CNN
 F 3 "~" H 14800 3650 50  0001 C CNN
 	1    14800 3650
-<<<<<<< Updated upstream
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2343,42 +1893,6 @@ L Device:R R?
 U 1 1 5F808B35
 P 15500 4100
 F 0 "R?" H 15570 4146 50  0000 L CNN
-=======
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R18
-U 1 1 5F808B24
-P 14500 3850
-F 0 "R18" V 14293 3850 50  0000 C CNN
-F 1 "130" V 14384 3850 50  0000 C CNN
-F 2 "" V 14430 3850 50  0001 C CNN
-F 3 "~" H 14500 3850 50  0001 C CNN
-	1    14500 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L TEFT4300:TEFT4300 Q9
-U 1 1 5F808B2F
-P 15400 3650
-F 0 "Q9" H 15605 3696 50  0000 L CNN
-F 1 "TEFT4300" H 15605 3605 50  0000 L CNN
-F 2 "" H 15400 3650 50  0001 L BNN
-F 3 "TEFT4300" H 15400 3650 50  0001 L BNN
-F 4 "Radial Vishay" H 15400 3650 50  0001 L BNN "Field4"
-F 5 "None" H 15400 3650 50  0001 L BNN "Field5"
-F 6 "Vishay Semiconductor" H 15400 3650 50  0001 L BNN "Field6"
-F 7 "Phototransistor IR Chip Silicon 925nm 2-Pin T-1" H 15400 3650 50  0001 L BNN "Field7"
-F 8 "Unavailable" H 15400 3650 50  0001 L BNN "Field8"
-	1    15400 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R21
-U 1 1 5F808B35
-P 15500 4100
-F 0 "R21" H 15570 4146 50  0000 L CNN
->>>>>>> Stashed changes
 F 1 "1.8k" H 15570 4055 50  0000 L CNN
 F 2 "" V 15430 4100 50  0001 C CNN
 F 3 "~" H 15500 4100 50  0001 C CNN
@@ -2395,17 +1909,10 @@ Connection ~ 15500 3900
 Wire Wire Line
 	15500 3900 15500 3950
 $Comp
-<<<<<<< Updated upstream
 L Device:C_Small C?
 U 1 1 5F808B40
 P 15300 2900
 F 0 "C?" V 15071 2900 50  0000 C CNN
-=======
-L Device:C_Small C22
-U 1 1 5F808B40
-P 15300 2900
-F 0 "C22" V 15071 2900 50  0000 C CNN
->>>>>>> Stashed changes
 F 1 "3.3uF" V 15162 2900 50  0000 C CNN
 F 2 "" H 15300 2900 50  0001 C CNN
 F 3 "~" H 15300 2900 50  0001 C CNN
@@ -2450,21 +1957,12 @@ Wire Wire Line
 Text Label 14500 3700 1    50   ~ 0
 Emitter3
 $Comp
-<<<<<<< Updated upstream
 L SFH_4545:SFH_4545 D?
 U 1 1 5F808B60
 P 14800 3300
 F 0 "D?" V 14704 3494 50  0000 L CNN
 F 1 "SFH_4545" V 14795 3494 50  0000 L CNN
 F 2 "DIO_SFH_4545" H 14800 3300 50  0001 L BNN
-=======
-L SFH_4545:SFH_4545 D9
-U 1 1 5F808B60
-P 14800 3300
-F 0 "D9" V 14704 3494 50  0000 L CNN
-F 1 "SFH_4545" V 14795 3494 50  0000 L CNN
-F 2 "" H 14800 3300 50  0001 L BNN
->>>>>>> Stashed changes
 F 3 "SFH 4545" H 14800 3300 50  0001 L BNN
 F 4 "Radial Osram Opto" H 14800 3300 50  0001 L BNN "Field4"
 F 5 "None" H 14800 3300 50  0001 L BNN "Field5"
@@ -2510,17 +2008,10 @@ Wire Notes Line
 Wire Notes Line
 	16100 8850 16100 5700
 $Comp
-<<<<<<< Updated upstream
 L Regulator_Linear:LM1117-3.3 U?
 U 1 1 5F8FA88B
 P 8950 8950
 F 0 "U?" H 8950 9192 50  0000 C CNN
-=======
-L Regulator_Linear:LM1117-3.3 U6
-U 1 1 5F8FA88B
-P 8950 8950
-F 0 "U6" H 8950 9192 50  0000 C CNN
->>>>>>> Stashed changes
 F 1 "LM1117-3.3" H 8950 9101 50  0000 C CNN
 F 2 "" H 8950 8950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 8950 8950 50  0001 C CNN
@@ -2528,17 +2019,10 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 8950 8950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-<<<<<<< Updated upstream
 L power:GND #PWR?
 U 1 1 5F8FA891
 P 8950 9300
 F 0 "#PWR?" H 8950 9050 50  0001 C CNN
-=======
-L power:GND #PWR0114
-U 1 1 5F8FA891
-P 8950 9300
-F 0 "#PWR0114" H 8950 9050 50  0001 C CNN
->>>>>>> Stashed changes
 F 1 "GND" H 8955 9127 50  0000 C CNN
 F 2 "" H 8950 9300 50  0001 C CNN
 F 3 "" H 8950 9300 50  0001 C CNN
@@ -2551,17 +2035,10 @@ Connection ~ 8950 9250
 Wire Wire Line
 	8950 9300 8950 9250
 $Comp
-<<<<<<< Updated upstream
 L power:+8V #PWR?
 U 1 1 5F8FA8A0
 P 8350 8950
 F 0 "#PWR?" H 8350 8800 50  0001 C CNN
-=======
-L power:+8V #PWR0141
-U 1 1 5F8FA8A0
-P 8350 8950
-F 0 "#PWR0141" H 8350 8800 50  0001 C CNN
->>>>>>> Stashed changes
 F 1 "+8V" V 8365 9078 50  0000 L CNN
 F 2 "" H 8350 8950 50  0001 C CNN
 F 3 "" H 8350 8950 50  0001 C CNN
@@ -2571,17 +2048,10 @@ $EndComp
 Wire Wire Line
 	8950 9250 9350 9250
 $Comp
-<<<<<<< Updated upstream
 L Device:C C?
 U 1 1 5F8FA8A7
 P 9350 9100
 F 0 "C?" H 9236 9054 50  0000 R CNN
-=======
-L Device:C C19
-U 1 1 5F8FA8A7
-P 9350 9100
-F 0 "C19" H 9236 9054 50  0000 R CNN
->>>>>>> Stashed changes
 F 1 "10uF" H 9236 9145 50  0000 R CNN
 F 2 "" H 9388 8950 50  0001 C CNN
 F 3 "~" H 9350 9100 50  0001 C CNN
@@ -2591,17 +2061,10 @@ $EndComp
 Wire Wire Line
 	9250 8950 9350 8950
 $Comp
-<<<<<<< Updated upstream
 L Device:C C?
 U 1 1 5F8FA8AE
 P 8450 9100
 F 0 "C?" H 8336 9054 50  0000 R CNN
-=======
-L Device:C C17
-U 1 1 5F8FA8AE
-P 8450 9100
-F 0 "C17" H 8336 9054 50  0000 R CNN
->>>>>>> Stashed changes
 F 1 "10uF" H 8336 9145 50  0000 R CNN
 F 2 "" H 8488 8950 50  0001 C CNN
 F 3 "~" H 8450 9100 50  0001 C CNN
@@ -2645,21 +2108,12 @@ Text Label 15100 2700 0    50   ~ 0
 Wire Wire Line
 	15100 2700 15100 2900
 $Comp
-<<<<<<< Updated upstream
 L ESP8266-01_ESP-01:ESP8266-01_ESP-01 U?
 U 1 1 5F8E9807
 P 6150 3600
 F 0 "U?" H 6150 4267 50  0000 C CNN
 F 1 "ESP8266-01_ESP-01" H 6150 4176 50  0000 C CNN
 F 2 "XCVR_ESP8266-01/ESP-01" H 6150 3600 50  0001 L BNN
-=======
-L ESP8266-01_ESP-01:ESP8266-01_ESP-01 U5
-U 1 1 5F8E9807
-P 6150 3600
-F 0 "U5" H 6150 4267 50  0000 C CNN
-F 1 "ESP8266-01_ESP-01" H 6150 4176 50  0000 C CNN
-F 2 "" H 6150 3600 50  0001 L BNN
->>>>>>> Stashed changes
 F 3 "AI-Thinkers vendor" H 6150 3600 50  0001 L BNN
 	1    6150 3600
 	1    0    0    -1  
