@@ -1,7 +1,7 @@
 ******************************************************************************
                   TI ARM Linker PC v18.12.4                    
 ******************************************************************************
->> Linked Sat Oct 24 20:51:20 2020
+>> Linked Sat Oct 24 21:04:04 2020
 
 OUTPUT FILE NAME:   <mm.out>
 ENTRY POINT SYMBOL: "_c_int00"  address: 00003f59
@@ -682,8 +682,8 @@ section   page    origin      length       input sections
 .vecs      0    20000000    00000360     UNINITIALIZED
                   20000000    00000360     gpiointerrupt_pem4f.oem4f (.vecs)
 
-xdc.meta   0    00000000    000000e8     COPY SECTION
-                  00000000    000000e8     gpiointerrupt_pem4f.oem4f (xdc.meta)
+xdc.meta   0    00000000    000000ec     COPY SECTION
+                  00000000    000000ec     gpiointerrupt_pem4f.oem4f (xdc.meta)
 
 MODULE SUMMARY
 
@@ -708,7 +708,7 @@ MODULE SUMMARY
     +--+----------------------------+-------+---------+---------+
        Total:                       774     0         1104   
                                                              
-    C:\Users\zachr\MM20Firmware\mm20\CCS\mm\Debug\configPkg\package\cfg\
+    C:\Users\Allen\Documents\GitHub\mm20\CCS\mm\Debug\configPkg\package\cfg\
        gpiointerrupt_pem4f.oem4f    1958    7670      5484   
     +--+----------------------------+-------+---------+---------+
        Total:                       1958    7670      5484   
@@ -925,11 +925,11 @@ UNDEFED   SHT$$INIT_ARRAY$$Limit
 0000626f  UART_write                                                        
 00000000  __ASM__                                                           
 200014c0  __CIOBUF_                                                         
-00000066  __ISA__                                                           
-00000079  __PLAT__                                                          
+0000006a  __ISA__                                                           
+0000007d  __PLAT__                                                          
 20002238  __STACK_END                                                       
 00000300  __STACK_SIZE                                                      
-0000009a  __TARG__                                                          
+0000009e  __TARG__                                                          
 000085d0  __TI_CINIT_Base                                                   
 000085e8  __TI_CINIT_Limit                                                  
 000085b0  __TI_Handler_Table_Base                                           
@@ -952,7 +952,7 @@ ffffffff  __TI_prof_data_start
 200016ac  __TI_tmpnams                                                      
 00004e5d  __TI_writemsg                                                     
 00006179  __TI_zero_init                                                    
-000000c0  __TRDR__                                                          
+000000c4  __TRDR__                                                          
 00002afb  __aeabi_idiv0                                                     
 00002afb  __aeabi_ldiv0                                                     
 000032a7  __aeabi_memclr                                                    
@@ -1480,10 +1480,10 @@ address   name
 00000001  xdc_runtime_Startup__EXECFXN__C                                   
 00000001  xdc_runtime_Startup__RESETFXN__C                                  
 00000041  ti_sysbios_family_arm_m3_Hwi_excDumpRegs__I                       
-00000066  __ISA__                                                           
-00000079  __PLAT__                                                          
-0000009a  __TARG__                                                          
-000000c0  __TRDR__                                                          
+0000006a  __ISA__                                                           
+0000007d  __PLAT__                                                          
+0000009e  __TARG__                                                          
+000000c4  __TRDR__                                                          
 00000300  __STACK_SIZE                                                      
 00000471  xdc_runtime_System_doPrint__I                                     
 000007bd  UARTTiva_open                                                     

@@ -89,7 +89,7 @@ void Task_WallDetector(UArg arg0, UArg arg1) {
     while(1)
     {
     //  1. turn on emitter
-    GPIO_PORTD_DATA_R = GPIO_PORTD_DATA_R ^ 0x0001;
+    GPIO_PORTD_DATA_R = GPIO_PORTD_DATA_R | 0x0001;
     //  2. wait for emitter to fully turn on
     __nop();
     __nop();

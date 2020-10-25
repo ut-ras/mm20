@@ -1,7 +1,7 @@
 # FIXED
 
 lib/motors.obj: ../lib/motors.c
-lib/motors.obj: C:/Users/zachr/MM20Firmware/mm20/CCS/mm/inc/motors.h
+lib/motors.obj: C:/Users/Allen/Documents/GitHub/mm20/CCS/mm/inc/motors.h
 lib/motors.obj: C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/stdint.h
 lib/motors.obj: C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/_stdint40.h
 lib/motors.obj: C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/sys/stdint.h
@@ -10,13 +10,13 @@ lib/motors.obj: C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/s
 lib/motors.obj: C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/machine/_types.h
 lib/motors.obj: C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/machine/_stdint.h
 lib/motors.obj: C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/sys/_stdint.h
-lib/motors.obj: C:/Users/zachr/MM20Firmware/mm20/CCS/mm/inc/tivaware/gpio.h
+lib/motors.obj: C:/Users/Allen/Documents/GitHub/mm20/CCS/mm/inc/tivaware/gpio.h
 lib/motors.obj: C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/stdbool.h
-lib/motors.obj: C:/Users/zachr/MM20Firmware/mm20/CCS/mm/inc/tivaware/hw_memmap.h
-lib/motors.obj: C:/Users/zachr/MM20Firmware/mm20/CCS/mm/inc/tivaware/pin_map.h
-lib/motors.obj: C:/Users/zachr/MM20Firmware/mm20/CCS/mm/inc/tivaware/qei.h
-lib/motors.obj: C:/Users/zachr/MM20Firmware/mm20/CCS/mm/inc/tivaware/rom.h
-lib/motors.obj: C:/Users/zachr/MM20Firmware/mm20/CCS/mm/inc/tivaware/sysctl.h
+lib/motors.obj: C:/Users/Allen/Documents/GitHub/mm20/CCS/mm/inc/tivaware/hw_memmap.h
+lib/motors.obj: C:/Users/Allen/Documents/GitHub/mm20/CCS/mm/inc/tivaware/pin_map.h
+lib/motors.obj: C:/Users/Allen/Documents/GitHub/mm20/CCS/mm/inc/tivaware/qei.h
+lib/motors.obj: C:/Users/Allen/Documents/GitHub/mm20/CCS/mm/inc/tivaware/rom.h
+lib/motors.obj: C:/Users/Allen/Documents/GitHub/mm20/CCS/mm/inc/tivaware/sysctl.h
 lib/motors.obj: C:/ti/ccs930/xdctools_3_60_02_34_core/packages/xdc/std.h
 lib/motors.obj: C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/stdarg.h
 lib/motors.obj: C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/stddef.h
@@ -175,11 +175,11 @@ lib/motors.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/
 lib/motors.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/knl/package/Task_SupportProxy.h
 lib/motors.obj: C:/ti/tirtos_tivac_2_16_00_08/products/tidrivers_tivac_2_16_00_08/packages/ti/drivers/GPIO.h
 lib/motors.obj: C:/ti/tirtos_tivac_2_16_00_08/products/tidrivers_tivac_2_16_00_08/packages/ti/drivers/PWM.h
-lib/motors.obj: C:/Users/zachr/MM20Firmware/mm20/CCS/mm/Board.h
-lib/motors.obj: C:/Users/zachr/MM20Firmware/mm20/CCS/mm/EK_TM4C123GXL.h
+lib/motors.obj: C:/Users/Allen/Documents/GitHub/mm20/CCS/mm/Board.h
+lib/motors.obj: C:/Users/Allen/Documents/GitHub/mm20/CCS/mm/EK_TM4C123GXL.h
 
 ../lib/motors.c: 
-C:/Users/zachr/MM20Firmware/mm20/CCS/mm/inc/motors.h: 
+C:/Users/Allen/Documents/GitHub/mm20/CCS/mm/inc/motors.h: 
 C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/stdint.h: 
 C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/_stdint40.h: 
 C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/sys/stdint.h: 
@@ -188,13 +188,13 @@ C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/sys/_types.h:
 C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/machine/_types.h: 
 C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/machine/_stdint.h: 
 C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/sys/_stdint.h: 
-C:/Users/zachr/MM20Firmware/mm20/CCS/mm/inc/tivaware/gpio.h: 
+C:/Users/Allen/Documents/GitHub/mm20/CCS/mm/inc/tivaware/gpio.h: 
 C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/stdbool.h: 
-C:/Users/zachr/MM20Firmware/mm20/CCS/mm/inc/tivaware/hw_memmap.h: 
-C:/Users/zachr/MM20Firmware/mm20/CCS/mm/inc/tivaware/pin_map.h: 
-C:/Users/zachr/MM20Firmware/mm20/CCS/mm/inc/tivaware/qei.h: 
-C:/Users/zachr/MM20Firmware/mm20/CCS/mm/inc/tivaware/rom.h: 
-C:/Users/zachr/MM20Firmware/mm20/CCS/mm/inc/tivaware/sysctl.h: 
+C:/Users/Allen/Documents/GitHub/mm20/CCS/mm/inc/tivaware/hw_memmap.h: 
+C:/Users/Allen/Documents/GitHub/mm20/CCS/mm/inc/tivaware/pin_map.h: 
+C:/Users/Allen/Documents/GitHub/mm20/CCS/mm/inc/tivaware/qei.h: 
+C:/Users/Allen/Documents/GitHub/mm20/CCS/mm/inc/tivaware/rom.h: 
+C:/Users/Allen/Documents/GitHub/mm20/CCS/mm/inc/tivaware/sysctl.h: 
 C:/ti/ccs930/xdctools_3_60_02_34_core/packages/xdc/std.h: 
 C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/stdarg.h: 
 C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/stddef.h: 
@@ -353,5 +353,5 @@ C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/knl/T
 C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/knl/package/Task_SupportProxy.h: 
 C:/ti/tirtos_tivac_2_16_00_08/products/tidrivers_tivac_2_16_00_08/packages/ti/drivers/GPIO.h: 
 C:/ti/tirtos_tivac_2_16_00_08/products/tidrivers_tivac_2_16_00_08/packages/ti/drivers/PWM.h: 
-C:/Users/zachr/MM20Firmware/mm20/CCS/mm/Board.h: 
-C:/Users/zachr/MM20Firmware/mm20/CCS/mm/EK_TM4C123GXL.h: 
+C:/Users/Allen/Documents/GitHub/mm20/CCS/mm/Board.h: 
+C:/Users/Allen/Documents/GitHub/mm20/CCS/mm/EK_TM4C123GXL.h: 

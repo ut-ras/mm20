@@ -7,7 +7,7 @@
         <srcFile name="package/cfg/gpiointerrupt_pem4f.c"/>
     </sources>
     <configscripts>
-        <srcFile name="C:/Users/zachr/MM20Firmware/mm20/CCS/mm/gpiointerrupt.cfg"/>
+        <srcFile name="C:/Users/Allen/Documents/GitHub/mm20/CCS/mm/gpiointerrupt.cfg"/>
     </configscripts>
     <makefiles>
         <srcFile name="package.mak" src="package.bld"/>
@@ -44,7 +44,7 @@
         isPartial="false"
         xCfgScript="package/cfg/gpiointerrupt_pem4f.cfg"
         xCfgPrefix="package/cfg/gpiointerrupt_pem4f"
-        cfgScript="C:/Users/zachr/MM20Firmware/mm20/CCS/mm/gpiointerrupt.cfg"
+        cfgScript="C:/Users/Allen/Documents/GitHub/mm20/CCS/mm/gpiointerrupt.cfg"
         cfgArgs="null"
         />
     </configurations>
@@ -56,7 +56,7 @@
         profile="release"
         xCfgScript="package/cfg/gpiointerrupt_pem4f.cfg"
         xCfgPrefix="package/cfg/gpiointerrupt_pem4f"
-        cfgScript="C:/Users/zachr/MM20Firmware/mm20/CCS/mm/gpiointerrupt.cfg"
+        cfgScript="C:/Users/Allen/Documents/GitHub/mm20/CCS/mm/gpiointerrupt.cfg"
         cfgArgs="null"
         />
     </executables>

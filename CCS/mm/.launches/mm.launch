@@ -5,7 +5,7 @@
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROGRAM.test.ccxml.Stellaris In-Circuit Debug Interface_0/CORTEX_M4_0" value="${build_artifact:mm}"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROJECT.test.ccxml.Stellaris In-Circuit Debug Interface_0/CORTEX_M4_0" value="mm"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_TARGET_CONFIG" value="${target_config_active_default:mm}"/>
-<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.test.ccxml.Stellaris In-Circuit Debug Interface_0/CORTEX_M4_0" value="C:/Users\zachr\workspace_v9\mm\Debug\mm.out"/>
+<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.test.ccxml.Stellaris In-Circuit Debug Interface_0/CORTEX_M4_0" value="C:/Users\Allen\Documents\GitHub\mm20\CCS\mm\Debug\mm.out"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/mm"/>
 </listAttribute>
