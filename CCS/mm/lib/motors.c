@@ -64,7 +64,7 @@ void reset_enc(void) {
     ROM_QEIPositionSet(QEI1_BASE, 0);
 }
 
-Void pwmMotorFxn(UArg arg0, UArg arg1)
+Void pwmMotorFxn(UArg arg0, UArg arg1)//this is currently a copy pasted LED example renamed to Motor
 {
     PWM_Handle pwm1;
     PWM_Handle pwm2 = NULL;

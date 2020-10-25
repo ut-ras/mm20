@@ -20,6 +20,8 @@ lib/launchpad.obj: C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/includ
 lib/launchpad.obj: C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/_ti_config.h
 lib/launchpad.obj: C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/linkage.h
 lib/launchpad.obj: C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/stdarg.h
+lib/launchpad.obj: C:/Users/zachr/MM20Firmware/mm20/CCS/mm/inc/v_tm4c123gh6pm.h
+lib/launchpad.obj: C:/Users/zachr/MM20Firmware/mm20/CCS/mm/inc/tivaware/adc.h
 
 ../lib/launchpad.c: 
 C:/Users/zachr/MM20Firmware/mm20/CCS/mm/inc/tivaware/gpio.h: 
@@ -41,3 +43,5 @@ C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/stdio.h:
 C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/_ti_config.h: 
 C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/linkage.h: 
 C:/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_18.12.4.LTS/include/stdarg.h: 
+C:/Users/zachr/MM20Firmware/mm20/CCS/mm/inc/v_tm4c123gh6pm.h: 
+C:/Users/zachr/MM20Firmware/mm20/CCS/mm/inc/tivaware/adc.h: 

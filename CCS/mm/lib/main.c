@@ -28,6 +28,7 @@
 
 /* Example/Board Header files */
 #include "Board.h"
+#include "v_tm4c123gh6pm.h"
 
 #define TASKSTACKSIZE   1024
 
@@ -85,27 +86,40 @@ void Task_WallDetector(UArg arg0, UArg arg1) {
      *  Emitter On/Off Gate: PD0
      *  Receiver Voltage Level: PD1
      */
-
+    while(1)
+    {
     //  1. turn on emitter
-
+    GPIO_PORTD_DATA_R = GPIO_PORTD_DATA_R ^ 0x0001;
     //  2. wait for emitter to fully turn on
-
+    __nop();
+    __nop();
     //  3. read receiver voltage using ADC
-    uint32_t adcOut=0;
 
-    ADCSequenceConfigure(ADC0_BASE, 0, ADC_TRIGGER_PROCESSOR, 0);
-    ADCSequenceStepConfigure(ADC0_BASE, 0, 0, ADC_CTL_IE | ADC_CTL_END
-                            | ADC_CTL_CH7);
-    ADCSequenceEnable(ADC0_BASE, 0);
-    ADCIntClear(ADC0_BASE, 0);
+    Task_sleep(1000);
+    uint32_t result;
+    ADC0_PSSI_R = 0x0008;
+    while((ADC0_RIS_R&0x08)==0){};
+    result = ADC0_SSFIFO3_R&0xFFF;
+    ADC0_ISC_R = 0x0008;
+    System_printf("%d\n",result);
 
-    ADCProcessorTrigger(ADC0_BASE, 0);
-    while(!ADCIntStatus(ADC0_BASE, 0, false)) {}
-    ADCIntClear(ADC0_BASE, 0);
-    ADCSequenceDataGet(ADC0_BASE, 0, &adcOut0);
+
+//    uint32_t adcOut=0;
+//
+//    ADCSequenceConfigure(ADC0_BASE, 0, ADC_TRIGGER_PROCESSOR, 0);
+//    ADCSequenceStepConfigure(ADC0_BASE, 0, 0, ADC_CTL_IE | ADC_CTL_END
+//                            | ADC_CTL_CH7);
+//    ADCSequenceEnable(ADC0_BASE, 0);
+//    ADCIntClear(ADC0_BASE, 0);
+//
+//    ADCProcessorTrigger(ADC0_BASE, 0);
+//    while(!ADCIntStatus(ADC0_BASE, 0, false)) {}
+//    ADCIntClear(ADC0_BASE, 0);
+//    ADCSequenceDataGet(ADC0_BASE, 0, &adcOut0);
 
     //  4. turn off emitter
-
+    GPIO_PORTD_DATA_R = GPIO_PORTD_DATA_R & 0xFFFE;
+    }
 }
 
 Task_Struct tsk0Struct;
