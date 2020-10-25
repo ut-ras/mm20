@@ -77,6 +77,9 @@ void LEDtask(UArg arg0, UArg arg1)
 void Task_WallDetector(UArg arg0, UArg arg1) {
     //  cycle through all 4 sensors
 
+    //  init
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_ADC0);
+
     /*
      *  Test circuit Pinout
      *  Emitter On/Off Gate: PD0
@@ -96,21 +99,10 @@ void Task_WallDetector(UArg arg0, UArg arg1) {
     ADCSequenceEnable(ADC0_BASE, 0);
     ADCIntClear(ADC0_BASE, 0);
 
-    ADCSequenceConfigure(ADC1_BASE, 0, ADC_TRIGGER_PROCESSOR, 0);
-    ADCSequenceStepConfigure(ADC1_BASE, 0, 0, ADC_CTL_IE | ADC_CTL_END
-                            | ADC_CTL_CH6);
-    ADCSequenceEnable(ADC1_BASE, 0);
-    ADCIntClear(ADC1_BASE, 0);
-
     ADCProcessorTrigger(ADC0_BASE, 0);
     while(!ADCIntStatus(ADC0_BASE, 0, false)) {}
     ADCIntClear(ADC0_BASE, 0);
     ADCSequenceDataGet(ADC0_BASE, 0, &adcOut0);
-
-    ADCProcessorTrigger(ADC1_BASE, 0);
-    while(!ADCIntStatus(ADC1_BASE, 0, false)) {}
-    ADCIntClear(ADC1_BASE, 0);
-    ADCSequenceDataGet(ADC1_BASE, 0, &adcOut1);
 
     //  4. turn off emitter
 
